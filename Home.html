@@ -1,0 +1,542 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    .card-img-hover {
+        transition: transform 0.5s ease;
+    }
+    .card:hover .card-img-hover {
+        transform: scale(1.1);
+    }
+   
+  
+    .footer {
+        background-color: gray;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer .footer-col {
+        flex: 1;
+        margin: 0 1rem;
+        min-width: 200px;
+        text-align: center;
+        color: white;
+    }
+    .footer h2 {
+        font-weight: bold;
+    }
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer ul li {
+        margin: 0.5rem 0;
+    }
+    .footer a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white" style="font-size: 25px;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="projact2/icons8-shopping-basket-64.png" alt="Basket Icon" width="30" height="30" class="d-inline-block align-top">
+            <span class="text-primary ms-2" style="font-size: 30px;"> <i>Bigbaskets</i></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img src="projact2/icons8-home-30.png" alt="" class="me-2">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Aboutus.html">
+                        <img src="projact2/icons8-about-us-30.png" alt="" class="me-2">About Us
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="projact2/icons8-menu-30.png" alt=""> Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="vegtables.html">Vegetables</a></li>
+                        <li><a class="dropdown-item" href="friuts.html">Fruits</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register1.html">
+                        <img src="projact2/icons8-register-30 (1).png" alt="" class="me-2">Register
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact1.html">
+                        <img src="projact2/icons8-contact-30 (1).png" alt="" class="me-2">Contact
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex mt-3 mt-lg-0">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="projact2/k.jpg" class="d-block w-100" alt="First slide" style="max-height: 60vh; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="projact2/veg1.jpg" class="d-block w-100" alt="Second slide" style="max-height: 60vh; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<br>
+
+
+
+
+<div class="container my-4">
+    <div class="row text-center">
+        <div class="col-12 col-md-3 mb-4">
+            <div class="border p-3 rounded" style="border: 1px solid black;">
+                <img src="projact2/icons8-free-delivery-64.png" alt="" class="mb-2">
+                <h4 style="font-size: 30px;">Free Shopping</h4>
+                <p style="font-size: 20px;">Free on orders over $300</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 mb-4">
+            <div class="border p-3 rounded" style="border: 1px solid black;">
+                <img src="projact2/icons8-security-shield-64.png" alt="" class="mb-2">
+                <h4 style="font-size: 30px;">Security Payment</h4>
+                <p style="font-size: 20px;">100% secure Payment</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 mb-4">
+            <div class="border p-3 rounded" style="border: 1px solid black;">
+                <img src="projact2/icons8-return-64.png" alt="" class="mb-2">
+                <h4 style="font-size: 30px;">5 Days Return</h4>
+                <p style="font-size: 20px;">30 day money guarantee</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 mb-4">
+            <div class="border p-3 rounded" style="border: 1px solid black;">
+                <img src="projact2/icons8-call-64.png" alt="" class="mb-2">
+                <h4 style="font-size: 30px;">24/7 Support</h4>
+                <p style="font-size: 20px;">Support every time fast</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+       <br>
+       <br>
+
+       <center><h1>Menu</h1></center>
+
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p4.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                     <center> <h3 class="card-title">Pappaya</h3></center>
+                        <!-- <p class="card-text">$150</p> -->
+                       <h3 style="font-size: 20px;">$150</h3>
+                       <select>
+                        <optgroup label="Offer">
+                           <option value="1kg">1kg</option>
+                           <option value="2kg">2kg</option>
+                           <option value="3kg">3kg</option>
+                           </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p1.webp" class="card-img-top card-img-hover" alt="Card image cap" width="70px">
+                    <div class="card-body">
+                       <center><h3 class="card-title">Maadhulai</h3></center>
+                        <h3 style="font-size: 20px;">$65</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p2.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                       <center><h3 class="card-title">Banana</h3></center>
+                        <h3 style="font-size: 20px;">$45</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p3.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">Mango</h3>
+                        <h3 style="font-size: 20px;">$150</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+ 
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p6.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                      <center><h3 class="card-title">Carret</h3></center>
+                        <h3 style="font-size: 20px;">$70</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p7.webp" class="card-img-top card-img-hover" alt="Card image cap" width="70px">
+                    <div class="card-body">
+                      <center> <h3 class="card-title">Green Chilli</h3></center>
+                        <h3 style="font-size: 20px;">$65</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p8.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                       <center><h3 class="card-title">Potato</h3></center>
+                        <h3 style="font-size: 20px;">$200</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p9.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                      <center><h3 class="card-title">Leadies fingger</h3></center>
+                        <h3 style="font-size: 20px;">$150</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p11.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                      <center> <h3 class="card-title">Puthina</h3></center>
+                        <h3 style="font-size: 20px;">$50</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p12.webp" class="card-img-top card-img-hover" alt="Card image cap" width="70px">
+                    <div class="card-body">
+                       <center><h3 class="card-title">Cauliflower</h3></center>
+                        <h3 style="font-size: 20px;">$120</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p13.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                      <center><h3 class="card-title">Green cow peas</h3></center>
+                        <h3 style="font-size: 20px;">$50</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/p14.webp" class="card-img-top card-img-hover" alt="Card image cap">
+                    <div class="card-body">
+                      <center> <h3 class="card-title">Tropical Amaranth</h3></center>
+                        <h3 style="font-size: 20px;">$70</h3>
+                        <select>
+                            <optgroup label="Offer">
+                               <option value="1kg">1kg</option>
+                               <option value="2kg">2kg</option>
+                               <option value="3kg">3kg</option>
+                               </optgroup>
+                           </select>
+                           <br>
+                           <br>
+                           <a href="#" class="btn btn-primary" style="margin-right:50px;"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+<br>
+br
+    <center><h1>Customer Reviews</h1></center>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/john5.jpg" class="card-img-top" alt="Image Description">
+                    <div class="card-body">
+                        <h5 class="card-title">Jemos</h5>
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-half-empty-30.png" alt="">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/john4.jpg" class="card-img-top" alt="Image Description">
+                    <div class="card-body">
+                        <h5 class="card-title">Madhu</h5>
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-half-empty-30.png" alt="">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="projact2/john3.png" class="card-img-top" alt="Image Description">
+                    <div class="card-body">
+                        <h5 class="card-title">William</h5>
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-half-empty-30.png" alt="">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="projact2/john5.jpg" class="card-img-top" alt="Image Description">
+                    <div class="card-body">
+                        <h5 class="card-title">William</h5>
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-30.png" alt="">
+                        <img src="projact2/icons8-star-half-empty-30.png" alt="">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  <br>
+  <br>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 footer-col">
+                    <h2>Location</h2>
+                    <ul>
+                        <li><a href="#">Namakkal</a></li>
+                        <li><a href="#">Salem</a></li>
+                        <li><a href="#">Karur</a></li>
+                        <li><a href="#">Chennai</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer-col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer-col">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="#">Madhumitha K</a></li>
+                        <li><a href="#">6385253061</a></li>
+                        <li><a href="#">madhumitha8654@gmail.com</a></li>
+                        <li><a href="#">Chennai-600-38</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer-col">
+                    <h2>Follow Us</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#"><img src="projact2/icons8-facebook-30.png" alt="Facebook" width="30" height="30"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><img src="projact2/icons8-instagram-30.png" alt="Instagram" width="30" height="30"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><img src="projact2/icons8-youtube-30.png" alt="YouTube" width="30" height="30"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
